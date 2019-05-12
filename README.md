@@ -46,27 +46,7 @@ Use `-v` if you need to remove the database volume which is used to persist the 
 
 ```
 docker-compose down -v
-```
 
-### Project from existing source
-
-Copy the `docker-compose.yml` file into a new directory. In the directory you create two folders:
-
-* `wp-data` – here you add the database dump
-* `wp-app` – here you copy your existing WordPress code
-
-You can now use the `up` command:
-
-```
-docker-compose up
-```
-
-This will create the containers and populate the database with the given dump. You may set your host entry and change it in the database, or you simply overwrite it in `wp-config.php` by adding:
-
-```
-define('WP_HOME','http://wp-app.local');
-define('WP_SITEURL','http://wp-app.local');
-```
 
 ### Creating database dumps
 
@@ -74,7 +54,4 @@ define('WP_SITEURL','http://wp-app.local');
 ./export.sh
 ```
 
-### Developing a Theme
-
-Configure the volume to load the theme in the container in the `docker-compose.yml`:
 
