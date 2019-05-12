@@ -8,16 +8,6 @@ Open a terminal and `cd` to the folder in which `docker-compose.yml` is saved an
 ```
 docker-compose up
 ```
-
-This creates two new folders next to your `docker-compose.yml` file.
-
-* `wp-data` – used to store and restore database dumps
-* `wp-app` – the location of your WordPress application
-
-The containers are now built and running. You should be able to access the WordPress installation with the configured IP in the browser address. By default it is `http://127.0.0.1`.
-
-For convenience you may add a new entry into your hosts file.
-
 ## Usage
 
 ### Starting containers
