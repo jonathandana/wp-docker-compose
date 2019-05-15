@@ -8,7 +8,7 @@ services:
     volumes:
       - ./config/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
       - ./config/php.errors.ini:/usr/local/etc/php/conf.d/errors.ini
-      - ./htdocs:/var/www/html # Full wordpress project
+      - ./public_html:/var/www/html # Full wordpress project
       #- ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name # Plugin development
       #- ./theme-name/trunk/:/var/www/html/wp-content/themes/theme-name # Theme development
     environment:
@@ -25,7 +25,7 @@ services:
     image: wordpress:cli
     volumes:
       - ./config/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
-      - ./htdocs:/var/www/html
+      - ./public_html:/var/www/html
     depends_on:
       - db
       - wp
