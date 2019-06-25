@@ -44,13 +44,14 @@ docker-compose down -v
 ./export.sh
 ```
 
-### Removing containers
 
-install xdebug
+
+### install xdebug
 
 insert in container wp
 
-run 
+```docker exec -it IDCONTAINER bash
+```
 
 ```pecl install xdebug-2.61
 ```
