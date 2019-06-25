@@ -50,10 +50,12 @@ Use `-v` if you need to remove the database volume which is used to persist the 
 
 insert in container wp
 
-```docker exec -it IDCONTAINER bash
+```
+docker exec -it IDCONTAINER bash
 ```
 
-```pecl install xdebug-2.61
+```
+pecl install xdebug-2.61
 ```
 If has phpstorm you can to add config/php.conf.ini	
 
