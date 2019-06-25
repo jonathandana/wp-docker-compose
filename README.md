@@ -35,7 +35,8 @@ docker-compose down
 Use `-v` if you need to remove the database volume which is used to persist the database:
 
 ```
-docker-compose down -v
+  docker-compose down -v
+```
 
 
 ### Creating database dumps
