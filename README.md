@@ -44,4 +44,27 @@ docker-compose down -v
 ./export.sh
 ```
 
+### Removing containers
+
+install xdebug
+
+insert in container wp
+
+run 
+
+```
+pecl install xdebug-2.61
+
+```
+If has phpstorm you can to add config/php.conf.ini	
+
+```
+Example
+zend_extension="/usr/local/lib/php/extensions/no-debug-non-zts-20170718/xdebug.so" #file so
+xdebug.remote_enable=1
+xdebug.remote_host="IP"
+xdebug.idekey="PHPSTORM"
+
+```
+
 
