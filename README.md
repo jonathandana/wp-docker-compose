@@ -55,7 +55,8 @@ docker exec -it IDCONTAINER bash
 ```
 
 ```
-pecl install xdebug-2.61
+pecl install -f xdebug-2.6.1
+
 ```
 If has phpstorm you can to add config/php.conf.ini	
 
