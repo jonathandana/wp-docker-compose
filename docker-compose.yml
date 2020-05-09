@@ -2,6 +2,7 @@ version: '3'
 
 services:
   wp:
+    build: ./php/
     image: wordpress:latest # https://hub.docker.com/_/wordpress/
     ports:
       - ${IP}:80:80 # change ip if required
@@ -16,6 +17,9 @@ services:
       WORDPRESS_DB_NAME: "${DB_NAME}"
       WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: "${DB_ROOT_PASSWORD}"
+      XDEBUG_CONFIG: "remote_host=10.254.254.254"
+      PHP_IDE_CONFIG: "serverName=wp.server"
+
     depends_on:
       - db
     links:
