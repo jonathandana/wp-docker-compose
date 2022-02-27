@@ -9,6 +9,7 @@ services:
     volumes:
       - ./config/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
       - ./config/php.errors.ini:/usr/local/etc/php/conf.d/errors.ini
+      - ./config/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
       - ./public_html:/var/www/html # Full wordpress project
       #- ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name # Plugin development
       #- ./theme-name/trunk/:/var/www/html/wp-content/themes/theme-name # Theme development
